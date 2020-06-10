@@ -1,0 +1,13 @@
+{
+  "welcomeFile": "/cp.portal",
+  "authenticationMethod": "route",
+  "routes": [
+    {
+      "source": "^(/odata/v2/.*)$",
+      "target": "$1",
+      "authenticationType": "xsuaa",
+      "destination": "dest_odata_srv",
+      "csrfProtection": false
+    }
+  ]
+}
